@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body> 
+  <script>
+//Defina una Clase llamada Libro que posea las siguientes Propiedades:nombre del libro, autor, editorial y género.
+//Creá un Método en la definición de la Clase llamado mostrarLibro,que devuelva un mensaje con todas las Propiedades que posee un libro.
+    
+    class Libro {
+      constructor(nombreLibro, nombreAutor, nombreEditorial, generoLibro) {
+        this.nombre = nombreLibro;
+        this.autor = nombreAutor;
+        this.editorial = nombreEditorial;
+        this.genero = generoLibro;
+      }
+      mostrarLibro() {
+        return `${this.nombre} - ${this.autor} - ${this.editorial} - ${this.genero}`
+      }
+    }
+
+   //Instancia 3 Objetos de tipo Libro con diferentes valores
+    const libro1 = new Libro('El silencio de la ciudad blanca', 'Eva Garcia', 'Booket', 'Novela');
+    const libro2 = new Libro('Creer o no creer', 'Joseph Ramos', 'Paidós', 'Ciencias humanas y sociales');
+    const libro3 = new Libro('De Animales a Dioses ', 'Yuval Noah Harari', 'Debate', 'No Ficcion');
+
+    //invoca al Método mostrarLibro desde cada Objeto.
+    libro1.mostrarLibro();
+    libro2.mostrarLibro();
+    libro3.mostrarLibro();
+
+
+   //Cree un Arreglo llamado libros y cargue con los Objetos definidos previamente.
+
+    const libros = [libro1, libro2, libro3];
+   
+
+    function filtrarPorAutor(libros, autor) {
+      const array= [];
+      for (let lib of libros) {
+        if(lib.autor == autor){
+           array.push(lib);
+        }        
+      } 
+      return array;             
+    }
+
+  </script>
+</body>
+
+</html>
