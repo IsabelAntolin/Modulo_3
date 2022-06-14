@@ -1,0 +1,25 @@
+body {
+    background-image: url(https://images.alphacoders.com/976/thumb-1920-976234.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 68rem;
+ }
+ button {
+    border-radius: 0.5rem;
+    appearance: none;
+    padding: 0.5rem;
+    background-color: rgba(90, 82, 82, 0.568);
+    color: white;
+    font-weight: bold;
+    margin-top: 2rem;
+ }
+ h2 {         
+    text-align: justify;
+    font-family: 'Abril Fatface', cursive;
+    background-color: rgba(160, 166, 172, 0.774);        
+    border: 10px dotted black;
+    padding: 1rem;
+ }
+ h1 {
+    font-family: 'Abril Fatface', cursive;
+ }
